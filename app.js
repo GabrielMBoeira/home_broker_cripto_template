@@ -94,7 +94,7 @@ app.use('/data', async (req, res) => {
 
 app.use('/', (req, res) => {
     console.log('Entrou');
-    res.render('index', {
+    res.render('app', {
         symbol: symbol,
         profitability: profitability,
         lastUpdate: new Date(),
