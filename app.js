@@ -54,21 +54,21 @@ app.use('/data', async (req, res) => {
 
         if (qty > 0) {
             //--Ordem de compra: console.log(await api.newOrder(symbol, 1)) //situação geral da operação
-            const buyOrder = await api.newOrder(symbol, qty);
-            data.buyOrder = buyOrder;   
-            console.log(`orderId: ${buyOrder.orderId}`);
-            console.log(`status: ${buyOrder.status}`);
+            // const buyOrder = await api.newOrder(symbol, qty);
+            // data.buyOrder = buyOrder;   
+            // console.log(`orderId: ${buyOrder.orderId}`);
+            // console.log(`status: ${buyOrder.status}`);
 
 
             //--POSICIONANDO VENDA
             console.log('Posicionando venda futura!!!');
             const price = parseFloat(sellPrice * profitability).toFixed(5);
 
-            console.log(`Vendendo por ${price} (${profitability})`);
-            const sellOrder = await api.newOrder(symbol, qty, price, 'SELL', 'MARKET');
-            data.sellOrder = sellOrder;
-            console.log(`orderId: ${sellOrder.orderId}`);
-            console.log(`status: ${sellOrder.status}`);
+            // console.log(`Vendendo por ${price} (${profitability})`);
+            // const sellOrder = await api.newOrder(symbol, qty, price, 'SELL', 'MARKET');
+            // data.sellOrder = sellOrder;
+            // console.log(`orderId: ${sellOrder.orderId}`);
+            // console.log(`status: ${sellOrder.status}`);
         }
 
         console.log('----------------Resultado da carteira----------------');

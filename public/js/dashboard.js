@@ -11,9 +11,9 @@
       saleGradientBg2.addColorStop(0, 'rgba(0, 208, 255, 0.19)');
       saleGradientBg2.addColorStop(1, 'rgba(0, 208, 255, 0.03)');
       var salesTopData = {
-          labels: ["SUN","sun", "MON", "mon", "TUE","tue", "WED", "wed", "THU", "thu", "FRI", "fri", "SAT"],
+          labels: ["DOM","dom", "SEG", "seg", "TER","ter", "QUA", "qua", "QUI", "qui", "SEX", "sex", "SAB"],
           datasets: [{
-              label: 'This week',
+              label: 'Semana atual',
               data: [50, 110, 60, 290, 200, 115, 130, 170, 90, 210, 240, 280, 200],
               backgroundColor: saleGradientBg,
               borderColor: [
@@ -27,7 +27,7 @@
               pointBackgroundColor: ['#1F3BB3)', '#1F3BB3', '#1F3BB3', '#1F3BB3','#1F3BB3)', '#1F3BB3', '#1F3BB3', '#1F3BB3','#1F3BB3)', '#1F3BB3', '#1F3BB3', '#1F3BB3','#1F3BB3)'],
               pointBorderColor: ['#fff','#fff','#fff','#fff','#fff','#fff','#fff','#fff','#fff','#fff','#fff','#fff','#fff',],
           },{
-            label: 'Last week',
+            label: 'Semana anterior',
             data: [30, 150, 190, 250, 120, 150, 130, 20, 30, 15, 40, 95, 180],
             backgroundColor: saleGradientBg2,
             borderColor: [
@@ -117,7 +117,7 @@
       saleGradientBg2.addColorStop(0, 'rgba(0, 208, 255, 0.19)');
       saleGradientBg2.addColorStop(1, 'rgba(34, 36, 55, 0.2)');
       var salesTopDataDark = {
-          labels: ["SUN","sun", "MON", "mon", "TUE","tue", "WED", "wed", "THU", "thu", "FRI", "fri", "SAT"],
+          labels: ["DOM","dom", "SEG", "seg", "TER","ter", "QUA", "qua", "QUI", "qui", "SEX", "sex", "SAB", "sab"],
           datasets: [{
               label: '# of Votes',
               data: [50, 110, 60, 290, 200, 115, 130, 170, 90, 210, 240, 280, 200],
@@ -223,7 +223,7 @@
     if ($("#status-summary").length) {
       var statusSummaryChartCanvas = document.getElementById("status-summary").getContext('2d');;
       var statusData = {
-          labels: ["SUN", "MON", "TUE", "WED", "THU", "FRI"],
+          labels: ["DOM", "SEG", "TER", "QUA", "QUI", "SEX"],
           datasets: [{
               label: '# of Votes',
               data: [50, 68, 70, 10, 12, 80],
